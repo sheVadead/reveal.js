@@ -28,3 +28,88 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {
   display: block;
 }
+.title-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  width: 51%;
+  max-width: 500px;
+}
+.p-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 24px;
+}
+.frameworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.frameworks-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.javascript-frameworks,
+.python-frameworks,
+.java-frameworks {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+.java-frameworks {
+  margin: 0 auto;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vue-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vue-pluses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hooks-wrapper {
+  display: flex;
+
+}
+.item-list-hooks {
+ display: flex;
+ flex-wrap: wrap;
+}
+.single-hooks,
+.mount-hooks,
+.destroy-hooks,
+.update-hooks {
+  width: 50%;
+}
+.lifecycle-hooks-anatomy {
+  background-color: white;
+}
+.lifecycle-hooks-anatomy .hooks-title {
+  font: bold normal 40px/110% Arial, sans-serif;
+  color:#1d9c7e;
+}

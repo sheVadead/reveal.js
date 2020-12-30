@@ -1,40 +1,211 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>reveal.js</title>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="first">
+				<h2 class="fragment">Why FrameWorks?</h2>
+				<div class="p-wrapper">
+					<ul class="item-list">
+						<li class="fragment">It is <b>“just”</b> one of the tools that is available to help you develop better
+							and faster!</li>
+						<li class="fragment">There are many expected features not provided by the spec.</li>
+						<li class="fragment">Investing in the <b>task</b>, not in the technology.</li>
+						<li class="fragment">Guaranteed upgradability and maintenance.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="second">
+				<h2>What is framework?</h2>
+				<p class="fragment"><em>bunch of code in a package that provide basis: code and structure</em></p>
+			</section>
+			<section class="frameworks">
+				<h1>Frameworks</h1>
+				<div class="frameworks-wrapper">
+					<div class="fragment javascript-frameworks">
+						<h2>Javascript</h2>
+						<div class="logo-container">
+							<img src="./examples/assets/react-logo.svg" alt="react logo" width="100" height="100">
+							<img src="./examples/assets/vue-logo.svg" alt="vue logo" width="80" height="80">
+							<img src="./examples/assets/angular-icon.svg" alt="vue logo" width="80" height="80">
+						</div>
+					</div>
+					<div class="fragment python-frameworks">
+						<h2>python</h2>
+						<div class="logo-container">
+							<img src="./examples/assets/django-logo.svg" alt="django logo" width="80" height="80">
+							<img src="./examples/assets/web2py-logo.png" alt="vue logo" >
+						</div>
+					</div>
+				</div>
+				<div class="fragment java-frameworks">
+					<h2>Java</h2>
+					<div class="logo-container">
+						<img src="./examples/assets/spring-logo.png" alt="spring logo" width="100" height="100">
+						<img src="./examples/assets/struts-logo.png" alt="struts logo">
+						<img src="./examples/assets/hibernate-logo.svg" alt="vue logo" width="80" height="80">
+					</div>
+				</div>
+			</section>
+			<section class="third">
+				<div class="title-slide">
+					<div class="logo-wrapper">
+						<h1>VUE.js</h1>
+						<img src="./examples/assets/vue-logo.svg" alt="vue logo" width="128" height="128">
+					</div>
+				</div>
+			</section>
+			<section class="vue-info">
+				<h2 class="vue-site">vuejs.org</h2>
+				<img src="./examples/assets/vuejs.png" alt="">
+			</section>
+			<section>
+				<div class="vue-wrapper">
+					<div class="vue-pluses">
+						<div class="logo-wrapper">
+							<h1>VUE.js</h1>
+							<img src="./examples/assets/vue-logo.svg" alt="vue logo" width="128" height="128">
+						</div>
+					</div>
+					<ul class="item-list-pluses">
+						<li class="fragment">Approachable</li>
+						<li class="fragment">Versatile</li>
+						<li class="fragment">Perfomant</li>
+						<li class="fragment">Maintainable</li>
+						<li class="fragment">Testable</li>
+					</ul>
+				</div>
+			</section>
+			<section class="installation">
+				<h2>installation</h2>
+				<div class="fragment direct-install">
+					<p>Direct:</p>
+					<pre><code data-trim data-noescape>
+						Direct &ltscript&gt Include
+						  </code></pre>
+				</div>
+				<div class="fragment link-installation">
+					<p>Via CDN:</p>
+					<pre><code data-trim data-noescape>
+						&ltscript src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"&gt&lt/script"&gt
+						  </code></pre>
+				</div>
+				<div class="fragment npm-installation">
+					<p>Via npm:</p>
+					<pre><code data-trim data-noescape>
+						npm install vue
+						  </code></pre>
+				</div>
+			</section>
+			<section class="vue-feature">
+				<div class="feature-wrapper">
+					<h2>Vue anatomy</h2>
+					<div class="r-stack">
+						<img src="./examples/assets/vue-features.jpg" alt="">
+						<img src="./examples/assets/templates-vue.jpg" class="fragment" alt="template vue">
+						<img src="./examples/assets/script-vue.jpg" class="fragment" alt="script vue">
+						<img src="./examples/assets/lifecycle-vue.jpg" class="fragment" alt="lifecycle vue">
+						<img src="./examples/assets/style-vue.jpg" class="fragment" alt="style vue">
+					</div>
+	
+				</div>
+			</section>
+			<section>
+				<div class="lifecycle-hooks">
+					<h2>Lifecycle hooks</h2>
+					<div class="hooks-wrapper">
+						<div class="item-list-hooks">
+							<div class="single-hooks">
+								<pre class="fragment fade-up">
+									<code data-trim data-noescape>beforeCreate()</code>
+								</pre>
+								<pre class="fragment fade-up">
+									<code data-trim data-noescape>created()</code>
+								</pre>
+							</div>
+								<div class="mount-hooks">
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>beforeMount()</code>
+									</pre>
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>mounted()</code>
+									</pre>
+								</div>
+								<div class="update-hooks">
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>beforeUpdate()</code>
+									</pre>
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>updated()</code>
+									</pre>
+								</div>
+								<div class="destroy-hooks">
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>beforeDestroy()</code>
+									</pre>
+									<pre class="fragment fade-up">
+										<code data-trim data-noescape>destroyed()</code>
+									</pre>
+								</div>
+						</div>
+					</div>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+				</div>
+			</section>
+			<section class="lifecycle-hooks-anatomy">
+				<h3 class="hooks-title">Hooks lifecycle</p>
+				<div class="r-stack">
+					<img src="./examples/assets/lifecycle-hooks.png" width="800" height="500" alt="">
+					<img src="./examples/assets/beforeCreate.png" class="fragment" width="800" height="500" alt="beforeCreate hook">
+					<img src="./examples/assets/created.png" class="fragment" width="800" height="500" alt="created hook">
+					<img src="./examples/assets/mounted.png" class="fragment" width="800" height="500" alt="mounted hook">
+					<img src="./examples/assets/updated.png" class="fragment" width="800" height="500" alt="updated hook">
+					<img src="./examples/assets/destroyed.png" class="fragment" width="800" height="500" alt="destroyed hook">
+				</div>
+			</section>
+			<section>
+				<div class="vue-ecosystem">
+					<div class="r-stack">
+						<img src="./examples/assets/ecosystem.jpg" alt="ecosystem">
+						<img src="./examples/assets/vue-router.jpg" class="fragment" alt="vue router">
+						<img src="./examples/assets/vuex.jpg" class="fragment" alt="vuex">
+						<img src="./examples/assets/vue-cli.jpg" class="fragment" alt="vue cli">
+						<img src="./examples/assets/vue-loader.jpg" class="fragment" alt="vue loader">
+						<img src="./examples/assets/vue-devtools.jpg" class="fragment" alt="vue devtools">
+						<img src="./examples/assets/vue-test.jpg" class="fragment" alt="vue devtools">
+						<img src="./examples/assets/server-vue.jpg" class="fragment" alt="vue devtools">
+					</div>
+				</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
